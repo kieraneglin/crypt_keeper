@@ -25,7 +25,7 @@ module CryptKeeper
       #
       # Returns a String
       def encrypt(value)
-        AES.encrypt(value, key, {iv: })
+        AES.encrypt(value, key)
       end
 
       # Public: Decrypt a string
