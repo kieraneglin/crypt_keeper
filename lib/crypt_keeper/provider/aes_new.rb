@@ -1,4 +1,5 @@
 require 'aes'
+require 'AESCrypt'
 require 'armor'
 
 module CryptKeeper
@@ -24,7 +25,7 @@ module CryptKeeper
       #
       # Returns a String
       def encrypt(value)
-        AES.encrypt(value, key)
+        AESCrypt.encrypt(value, key)
       end
 
       # Public: Decrypt a string
@@ -35,7 +36,7 @@ module CryptKeeper
       #
       # Returns a String
       def decrypt(value)
-        AES.decrypt(value, key)
+        AESCrypt.decrypt(value, key)
       end
 
       # Public: Search for a record
