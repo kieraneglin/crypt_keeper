@@ -25,7 +25,7 @@ module CryptKeeper
       #
       # Returns a String
       def encrypt(value)
-        AESCrypt.encrypt(value, key)
+        AESCrypt.encrypt(value, key, {iv: '4358eccd66f96e36c0c35420f619f0ced2e2c6d20556df2ba7af26761dab7fe7f0d676520176f11dac8c0e22d64ef4e195bc7406bf5a0c211c59bc2a196ae6a8'})
       end
 
       # Public: Decrypt a string
